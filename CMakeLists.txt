@@ -45,6 +45,7 @@ target_link_libraries(correctorLens ${Geant4_LIBRARIES})
 set(EXAMPLEB1_SCRIPTS
   init_vis.mac
   vis.mac
+  vis_qt.mac
   lens_n_reff_1.4.dat
   )
 

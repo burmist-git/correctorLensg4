@@ -36,8 +36,10 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-int main(){
+int main(int argc, char** argv){
 
+  //G4UIExecutive *ui = new G4UIExecutive(argc, argv);
+  
   // Choose the Random engine
   G4Random::setTheEngine(new CLHEP::RanecuEngine);
   
@@ -51,7 +53,9 @@ int main(){
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
   UImanager->ApplyCommand("/control/execute init_vis.mac");
-   
+  //ui->SessionStart();
+  //delete ui;
+  
   delete visManager;
   delete runManager;
 }
