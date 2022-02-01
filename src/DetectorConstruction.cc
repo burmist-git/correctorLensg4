@@ -100,7 +100,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct(){
 						   overlapsChecking);     //overlaps checking
   ////////////////////////////////////////////
   //load_fit_parameters_correction_lens_profile_function("../ellipse_Arc_Splines/lens_profile/lens_profile_n1.4_long_pol8_sym_par.dat");
-  load_fit_parameters_correction_lens_profile_function("/home/burmist/home2/work/POEMMA/geant4/terzinag4_ana/hist_v02.00.00b/lens_n_reff_1.4.dat");
+  //load_fit_parameters_correction_lens_profile_function("/home/burmist/home2/work/POEMMA/geant4/terzinag4_ana/hist_v02.00.00b/lens_n_reff_1.4.dat");
+  load_fit_parameters_correction_lens_profile_function("./lens_n_reff_1.4.dat");
   //lens_profile_function(0);
   ////////////////////////////////////////////
   //
